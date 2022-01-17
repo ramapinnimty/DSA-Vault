@@ -1,6 +1,7 @@
 public class BinarySearch {
     // URL: https://www.programiz.com/java-programming/examples/binary-search
 
+    // PRO-TIP: Use `int mid = start + ((end - start) / 2)` to avoid Integer Overflow Error!
     // I. Using recursion ; Time: O(log n) ; Space: O(log n) recursion call stack
     // space //
     private static int binarySearchRecr(int[] arr, int num, int start, int end) {
