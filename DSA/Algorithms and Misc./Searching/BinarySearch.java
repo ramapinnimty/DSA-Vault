@@ -1,7 +1,8 @@
 public class BinarySearch {
     // URL: https://www.programiz.com/java-programming/examples/binary-search
 
-    // I. Using recursion //
+    // I. Using recursion ; Time: O(log n) ; Space: O(log n) recursion call stack
+    // space //
     private static int binarySearchRecr(int[] arr, int num, int start, int end) {
         if (start > end)
             return -1;
@@ -16,7 +17,8 @@ public class BinarySearch {
         return mid;
     }
 
-    // II. Using iteration //
+    // II. Using iteration ; Time: O(log n) ; Space: O(1) recursion call stack
+    // space//
     private static int binarySearchIter(int[] arr, int num, int start, int end) {
         while (start <= end) {
             int mid = (start + end) / 2;
