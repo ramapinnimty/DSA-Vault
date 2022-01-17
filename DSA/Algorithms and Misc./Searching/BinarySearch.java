@@ -17,8 +17,7 @@ public class BinarySearch {
         return mid;
     }
 
-    // II. Using iteration ; Time: O(log n) ; Space: O(1) recursion call stack
-    // space//
+    // II. Using iteration ; Time: O(log n) ; Space: O(1) //
     private static int binarySearchIter(int[] arr, int num, int start, int end) {
         while (start <= end) {
             int mid = (start + end) / 2;
