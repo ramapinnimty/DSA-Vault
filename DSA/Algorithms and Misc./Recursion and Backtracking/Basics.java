@@ -1,6 +1,6 @@
 /*
     Learnings: -
-        1. Refrain from using unary operators for recursion (var++|++var & var--|--var) as they tend to produce confusing results.
+        1. Refrain from using unary operators for backtracking (var++|++var & var--|--var) as they tend to produce confusing results.
 */
 
 public class Basics {
@@ -31,7 +31,7 @@ public class Basics {
         printIntDec(--cntr);
     }
 
-    // Problem-4: Print linearly from 1 to N using backtracking.
+    // [IMP] Problem-4: Print linearly from 1 to N using backtracking.
     // Time: O(n) ; Space: O(n) --> Stack space
     public static void printIntIncRecr(int cntr) {
         if (cntr < 1)
@@ -40,7 +40,7 @@ public class Basics {
         System.out.println(cntr);
     }
 
-    // Problem-5: Print linearly from N to 1 using backtracking.
+    // [IMP] Problem-5: Print linearly from N to 1 using backtracking.
     // Time: O(n) ; Space: O(n) --> Stack space
     public static void printIntDecRecr(int cntr, int N) {
         if (cntr > N)
